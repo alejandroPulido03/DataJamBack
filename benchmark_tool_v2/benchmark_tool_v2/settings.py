@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "psycopg2",
+    "companies",
+    "surveys",
+    "badges",
 ]
 
 MIDDLEWARE = [
@@ -82,7 +85,7 @@ DATABASES = {
         "USER": "bench_tool_v2",
         "PASSWORD": "discordinados",
         "HOST": "172.17.0.2",
-        "PORT": "5432"
+        "PORT": "5432",
     }
 }
 
