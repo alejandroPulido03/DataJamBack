@@ -1,14 +1,16 @@
 from rest_framework import serializers
-from ..models import EmployeeEmail
 from rest_framework.validators import UniqueValidator
+from ..models import Industry
 
-class EmployeeEmailSerializer(serializers.ModelSerializer):
+
+class IndustrySerializer(serializers.ModelSerializer):
     class Meta:
-        model = EmployeeEmail
+        model = Industry
         fields = "__all__"
         validators = [
-            UniqueValidator(queryset=EmployeeEmail.objects.all())
+            UniqueValidator(queryset=Industry.objects.all())
         ]
+        
 
 
 
