@@ -10,9 +10,4 @@ class IndustrySerializer(serializers.ModelSerializer):
         validators = [
             UniqueValidator(queryset=Industry.objects.all())
         ]
-        
 
-
-
-
-# TODO send emails

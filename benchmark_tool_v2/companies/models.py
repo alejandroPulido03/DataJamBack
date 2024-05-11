@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+import uuid
 
 # Create your models here.
 class Industry(models.Model):
@@ -26,6 +26,6 @@ class EmployeeEmail(models.Model):
 
 
 class Employee(models.Model):
-    employee_id = models.CharField(max_length=100, primary_key=True)
+    employee_uuid = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
-    area = models.CharField(max_length=100)
+    area = models.CharField(max_length=100, null=True)
