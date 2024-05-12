@@ -92,7 +92,7 @@ DATABASES = {
         "USER": "bench_tool_v2",
         "PASSWORD": "discordinados",
         # "HOST": "172.17.0.2",
-        "HOST": "35.194.14.109",
+        "HOST": "34.171.154.238",
         # "PORT": "5432",
     }
 }
