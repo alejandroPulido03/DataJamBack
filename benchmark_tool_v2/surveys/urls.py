@@ -1,7 +1,7 @@
 from django.urls import path
 from .services.survey_question_service import SurveyQuestionView
 from .services.survey_response_service import SurveyResponseView
-from .services.survey_consolidated import get_survey_consolidated_metrics
+from .services.survey_consolidated_service import get_survey_consolidated_metrics
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [

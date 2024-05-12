@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework.response import Response
 from ..models import SurveyConsolidated
-from ..logic import SurveyConsolidatedSerializer, updateSurveyConsolidated
+from ..logic.survey_consolidated_logic import SurveyConsolidatedSerializer, updateSurveyConsolidated
 
 
 @api_view(["GET"])
