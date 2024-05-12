@@ -10,7 +10,7 @@ class SurveyConsolidatedSerializer(serializers.ModelSerializer):
 
 def updateSurveyConsolidated(consolidated):
     responses = SurveyResponse.objects.filter(survey_consolidated=consolidated)
-    new_score = responses.aaggregate(Avg('score'))
+    new_score = responses.aaggregate(score=Avg('score'))['score']
     consolidated.score = new_score
     consolidated.save()
     num_responses = responses.count()
