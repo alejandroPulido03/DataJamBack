@@ -1,0 +1,202 @@
+[
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Está laborando en esta empresa bajo un contrato constituido legalmente, donde se especifique su salario, vacaciones, prestaciones sociales, responsabilidades, actividades, entre otros? Considere contrato constituido legalmente como un documento de mutuo acuerdo de su empleador con usted, firmado por ambas partes.",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "null",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿La empresa le ha comunicado alguna vez las políticas y compromisos sobre la esclavitud moderna?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "Además de su salario, ¿la empresa le da beneficios como aportes al sistema de salud, seguro de riesgos, bonos, etc?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Servidumbre por deudas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿La empresa le desembolsa su salario y otros beneficios a tiempo?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {},
+        "statement": "¿Cuántas horas extra ha trabajado este mes? Considere horas extra como horas de trabajo no contempladas en su contrato",
+        "type_question": "TEXT"
+    },
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {
+            "options": [
+                "Si: ¿Cuántos?",
+                "No"
+            ]
+        },
+        "statement": "¿Tiene tiempos de descanso en su turno de trabajo? (Incluyendo tiempo de almuerzo)",
+        "type_question": "SELECT"
+    },
+    {
+        "asociated_risk": "Servidumbre por deudas",
+        "question_config": {
+            "options": [
+                "Con deudas",
+                "Sin deudas",
+                "Prefiero no responder"
+            ]
+        },
+        "statement": "¿Cuál es su perfil económico actual?",
+        "type_question": "SELECT"
+    },
+    {
+        "asociated_risk": "Práctica reclutamiento engañosa",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Ha debido pagar algo para poder ingresar a la empresa?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿El entorno de trabajo de la empresa se mantiene seguro y/o limpio?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Condiciones abusivas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Estás satisfecho con el idioma en el que está redactado tu contrato laboral?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Amenaza e intimidaciones",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Sientes que tienes la libertad de dejar tu empleo o alojamiento en cualquier momento sin consecuencias negativas?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "null",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Tienes acceso permanente a tus documentos de identificación, como pasaporte u otros, mientras trabajas con nosotros?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Trabajo infantil",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Se te solicitó proporcionar pruebas de tu edad al ser contratado? ¿Consideras que se toman medidas para prevenir el trabajo infantil en nuestra empresa?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "Amenaza e intimidaciones",
+        "question_config": {
+            "options": [
+                "Excelente",
+                "Bueno",
+                "Hostil",
+                "Discriminatorio",
+                "Amenaza e intimidaciones"
+            ]
+        },
+        "statement": "¿Cómo es el ambiente de trabajo en tu empresa?",
+        "type_question": "SELECT"
+    },
+    {
+        "asociated_risk": "Trabajo infantil",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Alguna vez has visto a un niño/adolescente realizando algún tipo trabajo físico o de alto requerimiento en la empresa que laboras?",
+        "type_question": "YES_NO"
+    },
+    {
+        "asociated_risk": "null",
+        "question_config": {},
+        "statement": "¿Cuáles son sus quejas/reclamos de la empresa?",
+        "type_question": "TEXT"
+    },
+    {
+        "asociated_risk": "Amenaza e intimidaciones",
+        "question_config": {
+            "options": [
+                "Me regañaría verbalmente",
+                "Habría una reprimenda física",
+                "Me indicaría la forma de hacerlo correctamente",
+                "Amenazaría con despedirme"
+            ]
+        },
+        "statement": "Si cometes un error en tu área de trabajo, ¿cómo crees que sería la reacción de tu jefe inmediato?",
+        "type_question": "SELECT"
+    },
+    {
+        "asociated_risk": "null",
+        "question_config": {},
+        "statement": "¿Cuál es tu salario actual en la empresa en USD?",
+        "type_question": "TEXT"
+    },
+    {
+        "asociated_risk": "La servidumbre por deudas",
+        "question_config": {
+            "options": [
+                "Si",
+                "No"
+            ]
+        },
+        "statement": "¿Considera que el salario que le pagan es acorde con su trabajo desempeñado en la empresa?",
+        "type_question": "YES_NO"
+    }
+]
