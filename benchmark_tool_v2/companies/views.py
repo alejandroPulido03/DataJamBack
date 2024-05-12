@@ -19,5 +19,3 @@ def loginCompany(request):
             return Response({"status":'Loggeado'})
         else:
             return Response({"status":'Usuario invalido'})
-
- 
