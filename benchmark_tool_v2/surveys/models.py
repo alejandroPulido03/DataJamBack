@@ -10,7 +10,7 @@ class SurveyQuestion(models.Model):
         "YES_NO": "YES_NO",
     }
 
-    statement = models.CharField(max_length=100)
+    statement = models.CharField(max_length=1000)
     asociated_risk = models.CharField(max_length=100)
     type_question = models.CharField(max_length=20, choices=type_questions.items())
     question_config = models.JSONField()
