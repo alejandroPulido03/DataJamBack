@@ -16,7 +16,7 @@ from . import models
 
 @csrf_exempt
 @api_view(["POST"])
-def register(request):
+def registerResponse(request):
     if request.method == "POST":
         respondent = request.data["respondent"]
         score = request.data["score"]
