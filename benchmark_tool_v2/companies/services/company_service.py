@@ -11,7 +11,6 @@ class CompanyView(generics.CreateAPIView, generics.RetrieveUpdateDestroyAPIView)
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
 
-
 class EmployeeEmailView(APIView):
     def post(self, request, company_pk):
         for email in request.data["emails"]:

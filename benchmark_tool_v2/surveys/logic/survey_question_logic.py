@@ -111,13 +111,11 @@ def calculate_score_numeric(question, answer):
             min_value, max_value = map(float, key[1:-1].split(","))
             if min_value <= answer < max_value:
                 return question_config["scores_schema"][key]
-
         return 0
     elif question_config["type_score"] == "UPPER_THRESHOLDS":
         for key in question_config["scores_schema"].keys():
             if answer <= int(key):
                 return question_config["scores_schema"][key]
-
         return 0
     elif question_config["type_score"] == "LOWER_THRESHOLDS":
         for key in question_config["scores_schema"].keys():
