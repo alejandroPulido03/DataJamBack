@@ -16,7 +16,6 @@ def loginCompany(request):
         user = authenticate(username=user, password=password)
         if user is not None:
             login(request, user)
-            print(user)
             return Response({"status":'Loggeado'})
         else:
             return Response({"status":'Usuario invalido'})
