@@ -17,7 +17,7 @@ urlpatterns = [
     path("industries/", IndustryView.as_view()),
     path("industries/<int:pk>/", IndustryView.as_view()),
 
-    path("make_anonymous_survey/<int:company_pk>/<uuid:employee_id>/", make_anonymous_survey_link),
+    path("make_anonymous_survey/<int:company_pk>/", make_anonymous_survey_link),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
