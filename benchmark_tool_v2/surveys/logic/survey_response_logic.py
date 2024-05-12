@@ -13,6 +13,5 @@ class SurveyResponseSerializer(serializers.ModelSerializer):
     def save(self, **kwargs):
         question = SurveyQuestionSerializer(self.validated_data["survey_question"])
         answer = self.validated_data["answer"]
-        
         self.validated_data["score"] = calculate_score(question.data, answer)
         return super().save(**kwargs)
