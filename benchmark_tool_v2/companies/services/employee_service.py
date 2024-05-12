@@ -9,7 +9,7 @@ def make_anonymous_survey_link(request, company_pk):
     employee = Employee(company_id=company_pk)
     employee.save()
     return Response({
-        "employee_id": employee.id,
+        "employee_id": employee.employee_uuid,
         "company_id": company_pk,
     }, status=status.HTTP_200_OK)
 
