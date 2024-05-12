@@ -5,8 +5,11 @@ from ..models import Employee
 
 
 @api_view(["GET"])
-def make_anonymous_survey_link(request, company_pk, employee_id):
-    employee = Employee(company_id=company_pk, employee_uuid=employee_id)
+def make_anonymous_survey_link(request, company_pk):
+    employee = Employee(company_id=company_pk)
     employee.save()
-    return Response({"status": "success"}, status=status.HTTP_200_OK)
+    return Response({
+        "employee_id": employee.employee_uuid,
+        "company_id": company_pk,
+    }, status=status.HTTP_200_OK)
 
