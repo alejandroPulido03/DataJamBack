@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 from .services.company_service import CompanyView, EmployeeEmailView
 from .services.industry_service import IndustryView
-from .services.employee_service import make_anonymous_survey_link
+from .services.employee_service import make_anonymous_survey_link, send_emails_endpoint
 from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
@@ -14,6 +14,7 @@ urlpatterns = [
         "companies/<int:company_pk>/employee_emails/<int:employee_email_pk>/",
         EmployeeEmailView.as_view(),
     ),
+    path("companies/<int:company_pk>/send_emails/", send_emails_endpoint),
     path("industries/", IndustryView.as_view()),
     path("industries/<int:pk>/", IndustryView.as_view()),
 
