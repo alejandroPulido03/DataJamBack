@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from ..models import EmployeeEmail
 from rest_framework.validators import UniqueValidator
-from ...benchmark_tool_v2.settings import EMAIL_HOST_USER
+from benchmark_tool_v2.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
 
 
@@ -9,9 +9,6 @@ class EmployeeEmailSerializer(serializers.ModelSerializer):
     class Meta:
         model = EmployeeEmail
         fields = "__all__"
-        validators = [
-            UniqueValidator(queryset=EmployeeEmail.objects.all())
-        ]
 
 
 def send_emails(company_pk):
