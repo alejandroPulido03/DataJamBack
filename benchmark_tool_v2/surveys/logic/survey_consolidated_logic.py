@@ -27,3 +27,6 @@ def updateSurveyConsolidated(consolidated):
         risk = "High"
 
     return consolidated, num_responses, highest_score, lowest_score, risk
+
+def getLastCompanyConsolidated(company_pk):
+    return SurveyConsolidated.objects.filter(asociated_company_id=company_pk).order_by("-date").first()

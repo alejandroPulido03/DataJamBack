@@ -24,3 +24,11 @@ def save_all_responses(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     return Response(response_data, status=status.HTTP_201_CREATED)
+
+@api_view(["GET"])
+def get_survey_responses_by_consolidated_and_question(request, consolidated_id, question_id):
+    responses = SurveyResponse.objects.filter(
+        survey_consolidated_id=consolidated_id, survey_question_id=question_id
+    )
+    serializer = SurveyResponseSerializer(responses, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)

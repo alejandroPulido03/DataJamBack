@@ -1,13 +1,12 @@
 from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework.response import Response
-from ..models import SurveyConsolidated
-from ..logic.survey_consolidated_logic import SurveyConsolidatedSerializer, updateSurveyConsolidated
+from ..logic.survey_consolidated_logic import SurveyConsolidatedSerializer, updateSurveyConsolidated, getLastCompanyConsolidated
 
 
 @api_view(["GET"])
-def get_survey_consolidated_metrics(request, pk):
-    consolidated = SurveyConsolidated.objects.get(pk=pk)
+def get_survey_consolidated_metrics(request, company_pk):
+    consolidated = getLastCompanyConsolidated(company_pk)
     consolidated, num_responses, highest_score, lowest_score, risk = (
         updateSurveyConsolidated(consolidated)
     )
